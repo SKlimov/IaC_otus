@@ -1,0 +1,15 @@
+reddit_path: /opt/reddit
+
+# reddit-ui environment vars
+POST_SERVICE_HOST: 127.0.0.1
+POST_SERVICE_PORT: 5000
+COMMENT_SERVICE_HOST: 127.0.0.1
+COMMENT_SERVICE_PORT: 4567
+
+# reddit-comment envinroment vars
+COMMENT_DATABASE_HOST: 127.0.0.1
+COMMENT_DATABASE_PORT: 27017
+
+# reddit-post envinroment vars
+POST_DATABASE_HOST: 127.0.0.1
+POST_DATABASE_PORT: 27017

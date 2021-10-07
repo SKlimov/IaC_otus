@@ -1,0 +1,28 @@
+---
+- hosts: ui
+  become: true
+  roles: 
+  - import_role:
+    name: ui_and_comment
+    vars: 
+    - components: [ui]
+  pre_tasks:
+    - name: clone repo
+      git:
+        repo: https://github.com/express42/reddit.git 
+        dest: /opt/reddit
+        version: microservices_for_mc
+
+- hosts: comment
+  become: true
+  roles: 
+  - import_role:
+    name: ui_and_comment
+    vars: 
+    - components: [comment]
+  pre_tasks:
+    - name: clone repo
+      git:
+        repo: https://github.com/express42/reddit.git
+        dest: /opt/reddit
+        version: microservices_for_mc
