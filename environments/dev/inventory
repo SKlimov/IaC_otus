@@ -1,8 +1,8 @@
 [post]
-post_host ansible_host=34.78.127.249 ansible_user=ubuntu
+post_host ansible_host=35.187.163.6 ansible_user=ubuntu
 [ui]
-ui_host ansible_host=34.78.127.249 ansible_user=ubuntu
+ui_host ansible_host=35.187.163.6 ansible_user=ubuntu
 [comment]
-comment_host ansible_host=34.78.127.249 ansible_user=ubuntu
+comment_host ansible_host=35.187.163.6 ansible_user=ubuntu
 [db]
-db_host ansible_host=34.78.127.249 ansible_user=ubuntu
+db_host ansible_host=35.187.163.6 ansible_user=ubuntu

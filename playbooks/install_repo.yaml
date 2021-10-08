@@ -1,0 +1,5 @@
+- name: clone repo
+  git:
+    repo: https://github.com/express42/reddit.git # адрес репозитория
+    dest: /opt/reddit
+    version: microservices_for_mc

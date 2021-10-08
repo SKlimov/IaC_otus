@@ -1,11 +1,7 @@
 - hosts: post
   become: true
   roles: 
-  - import_role:
-    name: post
+  - post
   pre_tasks:
-    - name: clone repo
-      git:
-        repo: https://github.com/express42/reddit.git # адрес репозитория
-        dest: /opt/reddit
-        version: microservices_for_mc
+  - name: clone repo
+    import_tasks: install_repo.yaml
